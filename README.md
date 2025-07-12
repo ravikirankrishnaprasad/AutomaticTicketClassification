@@ -2,9 +2,31 @@
 
 This project focuses on automating the classification of customer complaints for a financial company. The goal is to categorize support tickets based on product and service-related complaints, ensuring quicker response times and improved customer satisfaction.
 
-## Project Overview
+## 🧠 Problem Statement
 
-The project uses Natural Language Processing (NLP) and machine learning to analyze and classify unstructured complaint text data. By implementing Non-negative Matrix Factorization (NMF) for topic modeling, the model identifies recurring complaint patterns. Supervised learning models are then trained to classify new complaints into predefined categories.
+For a financial services company, **customer complaints** are valuable signals of product and service shortcomings. Efficient handling and classification of these complaints can significantly reduce customer dissatisfaction and improve retention and brand loyalty.
+
+Traditionally, analyzing and assigning these **unstructured text tickets** to the appropriate departments requires significant manual effort. As the company scales, this becomes inefficient and error-prone.
+
+In this project, you'll act as an NLP Engineer tasked with building a system to **automatically classify customer complaint tickets** into relevant product or service categories using topic modeling.
+
+---
+
+## 🎯 Business Goal
+
+The objective is to build a pipeline that:
+- Applies **Non-Negative Matrix Factorization (NMF)** for **topic modeling** on unlabelled complaint text data
+- Identifies dominant topics and recurring patterns in complaints
+- Maps each complaint to one of the following 5 clusters:
+  1. Credit card / Prepaid card
+  2. Bank account services
+  3. Theft / Dispute reporting
+  4. Mortgages / Loans
+  5. Others
+
+After clustering the complaints based on topics, the data can be used to train supervised machine learning models (e.g., Logistic Regression, Decision Trees, Random Forests). These models can then be used to classify **new customer complaints** into their respective departments, enabling **faster resolution** and **better service delivery**.
+
+
 
 ## Dataset
 
